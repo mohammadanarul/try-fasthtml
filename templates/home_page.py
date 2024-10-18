@@ -23,7 +23,10 @@ home_page_template = Div(
     A("Learn more", href="https://github.com/anarul/fasthtml"),
     Img(src="https://via.placeholder.com/500x200", alt="placeholder image"),
     Span("This is a span tag"),
-    Button("Click me"),
+    Button(
+        "Click me",
+        cls="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3 ml-2",
+    ),
     Form(
         Input(type="text", name="name", placeholder="Enter your name"),
         Label("Email"),
